@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube UI Hide</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="brand">
+        <img class="brand-icon" src="../icons/icon48.png" alt="" width="28" height="28" />
+        <div>
+          <h1>YouTube UI Hide</h1>
+          <p class="subtitle">Ẩn các phần giao diện gây xao nhãng</p>
+        </div>
+      </div>
+    </header>
+
+    <main id="toggles" class="toggles" aria-live="polite"></main>
+
+    <footer class="footer">
+      <button type="button" id="reset-btn" class="reset-btn">Đặt lại mặc định</button>
+      <p class="hint">Bật công tắc = ẩn phần đó trên YouTube</p>
+    </footer>
+
+    <script src="../shared/defaults.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

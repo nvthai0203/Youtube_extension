@@ -1,0 +1,87 @@
+/* Shorts — shelves, guide entries, rich items linking to /shorts/ */
+html.yte-hide-shorts ytd-rich-shelf-renderer[is-shorts],
+html.yte-hide-shorts ytd-reel-shelf-renderer,
+html.yte-hide-shorts ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts]),
+html.yte-hide-shorts ytd-guide-entry-renderer:has(a[href="/shorts"]),
+html.yte-hide-shorts ytd-guide-entry-renderer:has(a[title="Shorts"]),
+html.yte-hide-shorts ytd-mini-guide-entry-renderer[aria-label="Shorts"],
+html.yte-hide-shorts ytd-mini-guide-entry-renderer:has(a[title="Shorts"]),
+html.yte-hide-shorts ytd-rich-item-renderer:has(a[href*="/shorts/"]),
+html.yte-hide-shorts ytd-grid-video-renderer:has(a[href*="/shorts/"]),
+html.yte-hide-shorts ytd-video-renderer:has(a[href*="/shorts/"]),
+html.yte-hide-shorts ytm-rich-section-renderer:has(ytm-shorts-lockup-view-model),
+html.yte-hide-shorts ytm-reel-shelf-renderer {
+  display: none !important;
+}
+
+/* Comments */
+html.yte-hide-comments #comments,
+html.yte-hide-comments ytd-comments#comments,
+html.yte-hide-comments ytd-item-section-renderer#comments-section,
+html.yte-hide-comments ytm-comments-entry-point-teaser-renderer,
+html.yte-hide-comments #comments-button {
+  display: none !important;
+}
+
+/* Related / watch-next recommendations */
+html.yte-hide-related #related,
+html.yte-hide-related #secondary-inner > #related,
+html.yte-hide-related ytd-watch-next-secondary-results-renderer,
+html.yte-hide-related #items.ytd-watch-next-secondary-results-renderer,
+html.yte-hide-related ytm-item-section-renderer[section-identifier="related-items"] {
+  display: none !important;
+}
+
+/* Home feed grid */
+html.yte-hide-home-feed ytd-browse[page-subtype="home"] #contents.ytd-rich-grid-renderer,
+html.yte-hide-home-feed ytd-browse[page-subtype="home"] ytd-rich-grid-renderer,
+html.yte-hide-home-feed ytd-browse[page-subtype="home"] #primary,
+html.yte-hide-home-feed ytm-browse ytm-rich-grid-renderer {
+  display: none !important;
+}
+
+/* Left sidebar / guide */
+html.yte-hide-sidebar #guide,
+html.yte-hide-sidebar #guide-content,
+html.yte-hide-sidebar ytd-guide-renderer,
+html.yte-hide-sidebar #guide-button,
+html.yte-hide-sidebar #mini-guide,
+html.yte-hide-sidebar ytd-mini-guide-renderer,
+html.yte-hide-sidebar tp-yt-app-drawer#guide {
+  display: none !important;
+}
+
+html.yte-hide-sidebar ytd-app,
+html.yte-hide-sidebar ytd-page-manager {
+  --ytd-mini-guide-width: 0px !important;
+}
+
+html.yte-hide-sidebar #content.ytd-app,
+html.yte-hide-sidebar #page-manager {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* End screens / cards overlays in the player */
+html.yte-hide-end-screens .ytp-ce-element,
+html.yte-hide-end-screens .ytp-ce-covering-overlay,
+html.yte-hide-end-screens .ytp-cards-teaser,
+html.yte-hide-end-screens .ytp-endscreen-content,
+html.yte-hide-end-screens .ytp-scroll-min,
+html.yte-hide-end-screens .ytp-paid-content-overlay,
+html.yte-hide-end-screens .ytp-suggestion-set {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Live chat / chat replay */
+html.yte-hide-live-chat #chat,
+html.yte-hide-live-chat #chat-container,
+html.yte-hide-live-chat ytd-live-chat-frame,
+html.yte-hide-live-chat #show-hide-button,
+html.yte-hide-live-chat yt-live-chat-app,
+html.yte-hide-live-chat #chatframe,
+html.yte-hide-live-chat ytm-live-chat-frame-renderer {
+  display: none !important;
+}
